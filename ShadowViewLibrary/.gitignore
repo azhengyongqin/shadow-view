@@ -1,0 +1,5 @@
+build
+ShadowViewLibrary.iml
+proguard-rules.pro
+src/test
+src/androidTest

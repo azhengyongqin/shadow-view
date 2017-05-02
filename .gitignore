@@ -1,0 +1,16 @@
+.gradle
+.idea
+build
+gradle
+AndroidFrameworkStudy.iml
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+AndroidAndH5
+EventBus
+FloatScrollView
+GreenDao
+HellochartsAndroid
+RxAndroid
+TCPSocket
