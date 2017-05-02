@@ -51,9 +51,9 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 //项目主页
-def siteUrl = 'https://github.com/linglongxin24/SQLite'    // project homepage
+def siteUrl = 'http://git.oschina.net/zhengliang_blog/shadow-view'    // project homepage
 //项目的版本控制地址
-def gitUrl = 'https://github.com/linglongxin24/SQLite.git' // project git
+def gitUrl = 'https://git.oschina.net/zhengliang_blog/shadow-view.git' // project git
 
 //发布到组织名称名字，必须填写
 group = "cn.bluemobi.dylan"
@@ -114,7 +114,7 @@ install {
                 }
                 developers {
                     developer {
-                        id 'linglongxin24'
+                        id 'shadow-view'
                         name '郑亮'
                         email '1023007219@qq.com'
                     }
