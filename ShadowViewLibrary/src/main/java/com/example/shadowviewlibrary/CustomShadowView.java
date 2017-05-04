@@ -84,7 +84,6 @@ public class CustomShadowView extends View {
 
     /**
      * 初始化自定义属性
-     *
      * @param typedArray
      */
     private void initAttrs(TypedArray typedArray) {
@@ -97,12 +96,14 @@ public class CustomShadowView extends View {
         }
     }
 
+    /**
+     * Xml中定义的布局解析出来。
+     */
     private void findView() {
         if (view_id == 0) {
             return;
         }
         Context context = getContext();
-        //在构造函数中将Xml中定义的布局解析出来。
         if (context instanceof Activity) {
             Activity activity = (Activity) getContext();
             Log.e(TAG, "id是多少: " + view_id);
@@ -134,12 +135,19 @@ public class CustomShadowView extends View {
         canvas.drawRect(rect, mPaint);
     }
 
+    /**
+     * 获取View的属性
+     * @param w
+     * @param h
+     * @param oldw
+     * @param oldh
+     */
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
 
         if (this.view != null) {
-            /*获取View的属性*/
+
             this.left = this.view.getLeft();
             this.top = this.view.getTop();
             this.right = this.view.getRight();
