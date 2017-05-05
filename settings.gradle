@@ -1,1 +1,1 @@
-include ':EventBus', ':AndroidAndH5', ':GreenDao', ':HellochartsAndroid', ':TCPSocket', ':FloatScrollView', ':ShadowViewLibrary', ':ShadowViewDemo'
+include ':ShadowViewLibrary', ':ShadowViewDemo'

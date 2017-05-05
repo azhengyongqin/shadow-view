@@ -4,23 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.shadowviewdemo.MainActivity">
-
-    <TextView
-        android:id="@+id/tv_test"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="center"
-        android:text="Hello World!"
-        android:background="#FF4567"
-        android:layout_centerInParent="true"
-        />
-    <com.example.shadowviewlibrary.CustomShadowView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:shadow_height="10dp"
-        app:shadow_color="@color/colorPrimary"
-        app:view_id="@id/tv_test"
-        app:shadow_position="down"/>
-
+        <TextView
+            android:id="@+id/tv_test"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FF4567"
+            android:gravity="center"
+            android:text="Hello World!"
+            android:layout_centerInParent="true"
+            />
+        <com.example.shadowviewlibrary.CustomShadowView
+            android:id="@+id/shadow_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shadow_color="@color/colorPrimary"
+            app:shadow_fuzzy_radius="25"
+            app:shadow_height="10dp"
+            app:shadow_position="down"
+            app:view_id="@id/tv_test" />
 </RelativeLayout>

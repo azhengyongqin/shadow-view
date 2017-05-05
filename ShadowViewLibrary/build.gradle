@@ -49,14 +49,14 @@ makeJar.dependsOn(build)
 
 apply plugin: 'com.novoda.bintray-release'//添加
 //项目主页
-def siteUrl = 'http://git.oschina.net/zhengliang_blog/shadow-view'    // project homepage
+def siteUrl = 'https://github.com/azhengyongqin/shadow-view'    // project homepage
 
 publish{
-    repoName = 'maven'//不指明，默认是上传到maven
-    userOrg = 'yongqin'//bintray.com用户名
-    groupId = 'com.yongqin'//jcenter上的路径
+    repoName = 'android'//不指明，默认是上传到maven
+    userOrg = 'zhengliang1995'//bintray.com用户名
+    groupId = 'com.zhengliang'//jcenter上的路径
     artifactId = 'shadow-view'//项目名称
-    publishVersion = '1.0.0'//版本号
+    publishVersion = '1.0.1'//版本号
     desc = '一个控件阴影效果,支持阴影大小和颜色设置,可以设置控件上下的阴影'//描述，不重要
     website = siteUrl//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
